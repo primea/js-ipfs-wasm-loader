@@ -1,0 +1,39 @@
+{
+  "name": "js-ipfs-wasm-loader",
+  "version": "0.0.0",
+  "description": "load's webassembly imports from ipfs and 'patches the together in a single instance",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "coverage": "node --harmony ./node_modules/istanbul/lib/cli.js cover ./test/index.js",
+    "coveralls": "npm run coverage && coveralls <coverage/lcov.info",
+    "lint": "standard",
+    "test": "node --harmony ./test/index.js",
+    "build:docs": "documentation ./index.js --github --sort-order source -f md  > ./docs/index.md"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ipfs": "^0.23.1",
+    "tape": "^4.6.3",
+    "coveralls": "^2.13.0",
+    "documentation": "^3.0.4",
+    "istanbul": "^1.1.0-alpha.1",
+    "standard": "^10.0.2",
+  },
+  "repository": {
+    "type": "git",
+    "url": "<>"
+  },
+  "bugs": {
+    "url": "<>"
+  },
+  "homepage": "<>",
+  "keywords": [
+    "ipfs",
+    "wasm",
+    "webassembly"
+  ],
+}
