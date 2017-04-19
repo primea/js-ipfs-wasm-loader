@@ -25,7 +25,10 @@ tape('testing ipfs loader', async t => {
   // create the wasm instance with the imports from ipfs and local imports
   const instance = ipfsLoader.Instance(wasm, importModules, {
     'NOT_A_IPFS_HASH': {
-      'log': result => console.log(result)
+      'log': result => {
+        console.log(result)
+        t.equals(result, 12, 'should produce the corret result')
+      }
     }
   })
 
