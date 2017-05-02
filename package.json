@@ -21,7 +21,7 @@
     "coveralls": "^2.13.0",
     "documentation": "^3.0.4",
     "istanbul": "^1.1.0-alpha.1",
-    "standard": "^10.0.2",
+    "standard": "^10.0.2"
   },
   "repository": {
     "type": "git",
@@ -36,4 +36,9 @@
     "wasm",
     "webassembly"
   ],
+  "dependencies": {
+    "cids": "^0.5.0",
+    "ipfs": "^0.23.1",
+    "wasm-json-toolkit": "^0.1.0"
+  }
 }
